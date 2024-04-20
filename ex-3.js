@@ -374,4 +374,16 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+function customerName(bill)
+{
+  const billMembers = [];
+  for(let i = 0; i< bill.length; i++)
+  {
+    if(bill[i].member !== null) 
+    {
+      billMembers.push(bill[i].member.name)
+    };
+  }
+  return billMembers;
+}
+console.log(customerName(bills))

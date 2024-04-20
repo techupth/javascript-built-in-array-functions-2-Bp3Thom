@@ -374,4 +374,26 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+function customerName(bill)
+{
+  const billMembers = [];
+  for(let i = 0; i< bill.length; i++)
+  {
+    if(bill[i].member !== null) 
+    {
+      billMembers.push(bill[i].member.name)
+    };
+  }
+  return billMembers;
+}
+let allMember = customerName(bills);
+
+//console.log(allMember)
+
+const totalMembers = [];
+function removeSameName(allMember) 
+{
+  let totalMembers = Array.from(new Set(allMember))
+  return totalMembers.length
+}
+console.log(removeSameName(allMember))
