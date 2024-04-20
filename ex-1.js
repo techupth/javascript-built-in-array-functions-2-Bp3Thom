@@ -374,3 +374,13 @@ const bills = [
 ];
 
 // Start coding here
+
+function totalBill(bill)
+{
+  let sum = 0;
+  for(let i = 0; i < bill.length; i++) {
+    sum = sum + bill[i].total;
+  }
+  return sum;
+}
+console.log(totalBill(bills))

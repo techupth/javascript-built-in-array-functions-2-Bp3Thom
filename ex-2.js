@@ -374,5 +374,13 @@ const bills = [
 ];
 
 // Start coding here
+function checkBill (bill) {
+const newBills = [];
+  for(let i =0; i < bill.length; i++) {
+    if (bill[i].member !== null)
+    newBills.push(bill[i]);
+  }
+return newBills;
+}
 
-const newBills;
+console.log(checkBill(bills))

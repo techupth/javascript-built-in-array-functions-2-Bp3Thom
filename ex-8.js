@@ -375,4 +375,21 @@ const bills = [
 
 // Start coding here
 
-const totalPaidByLocation;
+//const totalPaidByLocation;
+
+function totalBill(bill)
+{
+  let sum = [];
+  for(let i = 0; i < bill.length; i++) 
+  {
+    if(bill[i].location === bill[i].location)
+    {
+        return `${bill[i].location} ${bill[i].total+bill[i].total}`;
+    }
+    else return `${bill[i].location} ${bill[i].total}`;
+    //sum.push(location[i]) sum + bill[i].total;
+  }
+
+}
+
+console.log(totalBill(bills));
